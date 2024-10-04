@@ -1,0 +1,19 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:VisualElement name="container" data-source-type="Saving.Sample.MenuViewModel, Saving.Sample" style="position: absolute; right: 0;">
+        <NZCore.UI.BindableButton text="Save" name="btn-manual-save" style="width: 157px; align-items: auto; justify-content: flex-start; align-self: center; position: relative;">
+            <Bindings>
+                <engine:DataBinding property="wasClicked" data-source-type="Saving.Sample.GameSaveLoadViewModel, Saving.Sample" binding-mode="ToSource" data-source-path="ManualSave" />
+            </Bindings>
+        </NZCore.UI.BindableButton>
+        <NZCore.UI.BindableButton text="Load" name="btn-manual-load" style="width: 157px; align-items: auto; justify-content: flex-start; align-self: center; position: relative;">
+            <Bindings>
+                <engine:DataBinding property="wasClicked" data-source-type="Saving.Sample.GameSaveLoadViewModel, Saving.Sample" binding-mode="ToSource" data-source-path="ManualLoad" />
+            </Bindings>
+        </NZCore.UI.BindableButton>
+        <NZCore.UI.BindableButton text="Main Menu" name="btn-goto-main-menu" style="width: 157px; align-items: auto; justify-content: flex-start; align-self: center; position: relative;">
+            <Bindings>
+                <engine:DataBinding property="wasClicked" data-source-type="Saving.Sample.GameSaveLoadViewModel, Saving.Sample" binding-mode="ToSource" data-source-path="GotoMainMenu" />
+            </Bindings>
+        </NZCore.UI.BindableButton>
+    </engine:VisualElement>
+</engine:UXML>

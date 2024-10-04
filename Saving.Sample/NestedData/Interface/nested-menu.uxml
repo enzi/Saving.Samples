@@ -1,0 +1,43 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:VisualElement name="container" picking-mode="Ignore" style="flex-grow: 0; flex-direction: row; align-self: center; align-items: stretch; justify-content: flex-start; align-content: flex-start;">
+        <engine:VisualElement style="flex-grow: 1; align-items: stretch; justify-content: flex-start; align-self: auto; align-content: flex-start; min-width: 300px;">
+            <engine:IntegerField label="Value1" value="0" name="txt-value1" select-word-by-double-click="false" select-all-on-focus="false" select-all-on-mouse-up="false" emoji-fallback-support="false" select-line-by-triple-click="false">
+                <Bindings>
+                    <engine:DataBinding property="value" data-source-type="Saving.Sample.NestedMenuViewModel, Saving.Sample" binding-mode="TwoWay" data-source-path="ComponentData.Value1" />
+                </Bindings>
+            </engine:IntegerField>
+            <engine:IntegerField label="Value2" value="0" name="txt-value2">
+                <Bindings>
+                    <engine:DataBinding property="value" data-source-type="Saving.Sample.NestedMenuViewModel, Saving.Sample" binding-mode="TwoWay" data-source-path="ComponentData.Value2" />
+                </Bindings>
+            </engine:IntegerField>
+            <engine:IntegerField label="Value21" value="0" name="txt-value21">
+                <Bindings>
+                    <engine:DataBinding property="value" data-source-type="Saving.Sample.NestedMenuViewModel, Saving.Sample" binding-mode="TwoWay" data-source-path="ComponentData.Value21" />
+                </Bindings>
+            </engine:IntegerField>
+            <engine:IntegerField label="Value3" value="0" name="txt-value3">
+                <Bindings>
+                    <engine:DataBinding property="value" data-source-type="Saving.Sample.NestedMenuViewModel, Saving.Sample" binding-mode="TwoWay" data-source-path="ComponentData.Value3" />
+                </Bindings>
+            </engine:IntegerField>
+            <engine:FloatField label="float2.x" value="0" name="float2-x">
+                <Bindings>
+                    <engine:DataBinding property="value" data-source-path="ComponentData.ToBeChangedStruct.FloatValue.x" data-source-type="Saving.Sample.NestedMenuViewModel, Saving.Sample" binding-mode="TwoWay" />
+                </Bindings>
+            </engine:FloatField>
+            <engine:FloatField label="float2.y" value="0" name="float2-y">
+                <Bindings>
+                    <engine:DataBinding property="value" data-source-path="ComponentData.ToBeChangedStruct.FloatValue.y" data-source-type="Saving.Sample.NestedMenuViewModel, Saving.Sample" binding-mode="TwoWay" />
+                </Bindings>
+            </engine:FloatField>
+        </engine:VisualElement>
+        <engine:VisualElement style="flex-grow: 1;">            
+            <NZCore.UI.BindableListView name="list" data-source-type="Saving.Sample.NestedMenuViewModel, Saving.Sample" virtualization-method="DynamicHeight" horizontal-scrolling="false" picking-mode="Ignore" show-border="true" focusable="false" selection-type="None" binding-source-selection-mode="AutoAssign" style="width: 350px;">
+                <Bindings>
+                    <engine:DataBinding property="itemsSource" data-source-path="ListElements" data-source-type="Saving.Sample.NestedMenuViewModel, Saving.Sample" binding-mode="TwoWay" />                    
+                </Bindings>
+            </NZCore.UI.BindableListView>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

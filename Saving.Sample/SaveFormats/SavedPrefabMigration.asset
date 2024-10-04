@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 249804c43ac14b7c814f01ca9e52f8eb, type: 3}
+  m_Name: SavedPrefabMigration
+  m_EditorClassIdentifier: 
+  SavedPrefabMigrationValue:
+    _value: 1
+  Migrations:
+  - From: {fileID: 2886077856983837674, guid: e0d5ebe92c462ccefa0748b6db03e5c4, type: 3}
+    To: {fileID: 2886077856983837674, guid: 838b4b47640b69e748c23cb2dd4fdda2, type: 3}
+    FromGuid:
+      Value0: 2663275790
+      Value1: 3972162754
+      Value2: 1803841711
+      Value3: 1281241277
+    ToGuid:
+      Value0: 1958000696
+      Value1: 2123804742
+      Value2: 734211204
+      Value3: 719189213

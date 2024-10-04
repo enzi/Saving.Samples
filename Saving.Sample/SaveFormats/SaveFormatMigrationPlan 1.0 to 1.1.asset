@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d63ee7356fa74d21ba552089a69a109b, type: 3}
+  m_Name: SaveFormatMigrationPlan 1.0 to 1.1
+  m_EditorClassIdentifier: 
+  SaveFormatMigrationPlanValue:
+    _value: 1
+  From: {fileID: 11400000, guid: 5ee308f6cbd4d392d93e12b05a0ecaa6, type: 2}
+  To: {fileID: 11400000, guid: 7ff5b40efa54cb38682780ec9d823045, type: 2}
+  MetaData:
+    MigrationLinks:
+    - FromStableTypeHash: 9601563133883314838
+      ToStableTypeHash: 9601563133883314838
+      FromName: LocalToWorld
+      ToName: 
+      FromIndex: 0
+      ToIndex: 0
+      Status: 1
+      FieldLinks: []
+    - FromStableTypeHash: 7264489596598919448
+      ToStableTypeHash: 7264489596598919448
+      FromName: LocalTransform
+      ToName: 
+      FromIndex: 1
+      ToIndex: 1
+      Status: 1
+      FieldLinks: []
+    - FromStableTypeHash: 1226522382493115059
+      ToStableTypeHash: 1226522382493115059
+      FromName: SavableEnableableComp
+      ToName: 
+      FromIndex: 2
+      ToIndex: 2
+      Status: 1
+      FieldLinks: []
+    - FromStableTypeHash: 10403670870664379182
+      ToStableTypeHash: 15575273459047686991
+      FromName: SavableComponent
+      ToName: 
+      FromIndex: 3
+      ToIndex: 3
+      Status: 2
+      FieldLinks:
+      - FromSubIndex: -1
+        FromIndex: 0
+        ToSubIndex: -1
+        ToIndex: 0
+      - FromSubIndex: -1
+        FromIndex: 1
+        ToSubIndex: -1
+        ToIndex: 1
+      - FromSubIndex: -1
+        FromIndex: 2
+        ToSubIndex: -1
+        ToIndex: 2
+      - FromSubIndex: -1
+        FromIndex: 3
+        ToSubIndex: -1
+        ToIndex: 4
+      - FromSubIndex: 3
+        FromIndex: 0
+        ToSubIndex: 4
+        ToIndex: 0
+      - FromSubIndex: 3
+        FromIndex: 1
+        ToSubIndex: 4
+        ToIndex: 1
+      - FromSubIndex: 3
+        FromIndex: 2
+        ToSubIndex: 4
+        ToIndex: 3
+      - FromSubIndex: -1
+        FromIndex: 4
+        ToSubIndex: -1
+        ToIndex: 5

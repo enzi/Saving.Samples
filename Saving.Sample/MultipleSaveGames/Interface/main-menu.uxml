@@ -1,0 +1,22 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:VisualElement name="VisualElement" style="flex-grow: 1; flex-direction: row;">
+        <engine:VisualElement name="VisualElement" style="flex-grow: 0; width: 300px;">
+            <engine:ListView name="save-slots" fixed-item-height="50" />
+            <engine:Button text="Load" name="btn-load" />
+        </engine:VisualElement>
+        <engine:VisualElement style="flex-grow: 1;">
+            <engine:VisualElement name="new-character" style="flex-grow: 1;">
+                <engine:TextField label="Character Name" name="character-name" style="width: 400px; align-self: center; color: rgb(183, 183, 183); font-size: 18px;">
+                    <Bindings>
+                        <engine:DataBinding property="value" data-source-path="CharacterName" data-source-type="Saving.Sample.MultipleSaveGamesViewModel, Saving.Sample" binding-mode="ToSource" />
+                    </Bindings>
+                </engine:TextField>
+                <NZCore.UI.BindableButton text="New Game" name="btn-create" style="width: 250px; align-self: center;">
+                    <Bindings>
+                        <engine:DataBinding property="wasClicked" data-source-path="CreateCharacter" data-source-type="Saving.Sample.MultipleSaveGamesViewModel, Saving.Sample" binding-mode="ToSource" />
+                    </Bindings>
+                </NZCore.UI.BindableButton>
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

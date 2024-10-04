@@ -1,0 +1,37 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:VisualElement name="container" data-source-type="Saving.Sample.MenuViewModel, Saving.Sample" picking-mode="Ignore" style="flex-grow: 0; flex-shrink: 1;">
+        <engine:VisualElement name="VisualElement" style="flex-grow: 1; position: absolute; align-self: center; align-items: auto; align-content: auto; flex-direction: column;">
+            <NZCore.UI.BindableButton text="Spawn 10 Cubes" name="btn-spawn-cube" style="width: 157px; align-items: auto; justify-content: flex-start; align-self: center; position: relative;">
+                <Bindings>
+                    <engine:DataBinding property="wasClicked" data-source-type="Saving.Sample.SpawnCubeViewModel, Saving.Sample" binding-mode="ToSource" data-source-path="SpawnCube" />
+                </Bindings>
+            </NZCore.UI.BindableButton>
+            <NZCore.UI.BindableButton text="Create Spawner" name="btn-create-spawner" style="width: 157px; align-items: auto; justify-content: flex-start; align-self: center; position: relative;">
+                <Bindings>
+                    <engine:DataBinding property="wasClicked" data-source-path="CreateSpawner" data-source-type="Saving.Sample.SpawnCubeViewModel, Saving.Sample" binding-mode="ToSource" />
+                </Bindings>
+            </NZCore.UI.BindableButton>
+            <NZCore.UI.BindableButton text="Destroy Spawners" name="btn-destroy-spawners" style="width: 157px; align-items: auto; justify-content: flex-start; align-self: center; position: relative;">
+                <Bindings>
+                    <engine:DataBinding property="wasClicked" data-source-type="Saving.Sample.SpawnCubeViewModel, Saving.Sample" binding-mode="ToSource" data-source-path="DestroySpawner" />
+                </Bindings>
+            </NZCore.UI.BindableButton>
+        </engine:VisualElement>
+        <engine:VisualElement name="object-stats" style="flex-grow: 1; background-color: rgb(92, 105, 132); width: 300px; flex-direction: row; justify-content: space-between;">
+            <engine:Label text="Object Count" style="font-size: 20px; align-self: center;" />
+            <engine:Label text="1234" name="object-amount" style="flex-shrink: 1; font-size: 40px; align-self: center;">
+                <Bindings>
+                    <engine:DataBinding property="text" data-source-type="Saving.Sample.SpawnCubeViewModel, Saving.Sample" binding-mode="ToTarget" data-source-path="SpawnedObjects" />
+                </Bindings>
+            </engine:Label>
+        </engine:VisualElement>
+        <engine:VisualElement name="spawner-stats" style="flex-grow: 1; background-color: rgb(92, 105, 132); width: 300px; flex-direction: row; justify-content: space-between;">
+            <engine:Label text="Spawner Count" style="font-size: 20px; align-self: center;" />
+            <engine:Label text="1234" name="spawner-amount" style="flex-shrink: 1; font-size: 40px; align-self: flex-end; align-content: flex-start; flex-direction: row; align-items: flex-end; justify-content: center;">
+                <Bindings>
+                    <engine:DataBinding property="text" data-source-type="Saving.Sample.SpawnCubeViewModel, Saving.Sample" binding-mode="ToTarget" data-source-path="SpawnerAmount" />
+                </Bindings>
+            </engine:Label>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

@@ -1,0 +1,26 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:VisualElement name="VisualElement" picking-mode="Ignore" style="flex-grow: 1; flex-direction: row;">
+        <engine:VisualElement picking-mode="Ignore" style="flex-grow: 1;">
+            <engine:VisualElement name="new-character" picking-mode="Ignore" style="flex-grow: 1; margin-top: 75px; margin-right: 75px; margin-bottom: 75px; margin-left: 75px;">
+                <engine:Label label="Character Name" name="character-name" text="Name" style="width: 400px; align-self: center; color: rgb(183, 183, 183); font-size: 28px; -unity-text-align: upper-center;">
+                    <Bindings>
+                        <engine:DataBinding property="text" data-source-path="CharacterName" data-source-type="Saving.Sample.SimpleGameViewModel, Saving.Sample" binding-mode="ToTarget" />
+                    </Bindings>
+                </engine:Label>
+                <engine:VisualElement style="flex-grow: 0; width: 50%; align-self: center; flex-direction: row; align-items: flex-end; justify-content: space-between; align-content: center;">
+                    <engine:Label text="Level" style="color: rgb(183, 183, 183); flex-grow: 1; font-size: 28px;" />
+                    <engine:Label label="Character Level" name="character-level" text="1" style="width: auto; align-self: center; font-size: 25px; color: rgb(183, 183, 183); text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.96);">
+                        <Bindings>
+                            <engine:DataBinding property="text" data-source-path="CharacterLevel" data-source-type="Saving.Sample.SimpleGameViewModel, Saving.Sample" binding-mode="ToTarget" />
+                        </Bindings>
+                    </engine:Label>
+                </engine:VisualElement>
+                <NZCore.UI.BindableButton text="Level Up!" name="btn-gain-level" style="width: 250px; align-self: center;">
+                    <Bindings>
+                        <engine:DataBinding property="wasClicked" data-source-path="GainLevelButton" data-source-type="Saving.Sample.SimpleGameViewModel, Saving.Sample" binding-mode="ToSource" />
+                    </Bindings>
+                </NZCore.UI.BindableButton>
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

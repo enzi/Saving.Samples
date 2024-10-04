@@ -1,0 +1,811 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2428d4249e7249a79fa56dda1817c04f, type: 3}
+  m_Name: SaveFormat1.1
+  m_EditorClassIdentifier: 
+  SaveFormatValue:
+    _value: 2
+  Version: 1.1
+  PreviousSaveFormat: {fileID: 11400000, guid: 5ee308f6cbd4d392d93e12b05a0ecaa6, type: 2}
+  FormatAuthoring:
+    AuthoringTypes:
+    - rid: 1930289502514577544
+    - rid: 1930289502514577566
+    - rid: 1930289502514577578
+    - rid: 1930289502514577580
+  references:
+    version: 2
+    RefIds:
+    - rid: 1930289502514577544
+      type: {class: SavedTypeAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        TypeName: LocalToWorld
+        StableTypeHash: 9601563133883314838
+        Fields:
+        - rid: 1930289502514577545
+        Type: 1
+        IsEnableable: 0
+    - rid: 1930289502514577545
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: Value
+        FieldTypeName: float4x4
+        FieldTypeDefinition: Unity.Mathematics.float4x4, Unity.Mathematics, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        SaveKey: 0
+        FieldTypeIndex: 0
+        Enabled: 1
+        MemCopy: 0
+        Fields:
+        - rid: 1930289502514577546
+        - rid: 1930289502514577547
+        - rid: 1930289502514577548
+        - rid: 1930289502514577549
+        FieldOffset: 0
+        FieldSize: 64
+        SpecialType: 0
+    - rid: 1930289502514577546
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: c0
+        FieldTypeName: float4
+        FieldTypeDefinition: Unity.Mathematics.float4, Unity.Mathematics, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        SaveKey: 0
+        FieldTypeIndex: 0
+        Enabled: 1
+        MemCopy: 0
+        Fields:
+        - rid: 1930289502514577550
+        - rid: 1930289502514577551
+        - rid: 1930289502514577552
+        - rid: 1930289502514577553
+        FieldOffset: 0
+        FieldSize: 16
+        SpecialType: 0
+    - rid: 1930289502514577547
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: c1
+        FieldTypeName: float4
+        FieldTypeDefinition: Unity.Mathematics.float4, Unity.Mathematics, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        SaveKey: 1
+        FieldTypeIndex: 1
+        Enabled: 1
+        MemCopy: 0
+        Fields:
+        - rid: 1930289502514577554
+        - rid: 1930289502514577555
+        - rid: 1930289502514577556
+        - rid: 1930289502514577557
+        FieldOffset: 16
+        FieldSize: 16
+        SpecialType: 0
+    - rid: 1930289502514577548
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: c2
+        FieldTypeName: float4
+        FieldTypeDefinition: Unity.Mathematics.float4, Unity.Mathematics, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        SaveKey: 2
+        FieldTypeIndex: 2
+        Enabled: 1
+        MemCopy: 0
+        Fields:
+        - rid: 1930289502514577558
+        - rid: 1930289502514577559
+        - rid: 1930289502514577560
+        - rid: 1930289502514577561
+        FieldOffset: 32
+        FieldSize: 16
+        SpecialType: 0
+    - rid: 1930289502514577549
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: c3
+        FieldTypeName: float4
+        FieldTypeDefinition: Unity.Mathematics.float4, Unity.Mathematics, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        SaveKey: 3
+        FieldTypeIndex: 3
+        Enabled: 1
+        MemCopy: 0
+        Fields:
+        - rid: 1930289502514577562
+        - rid: 1930289502514577563
+        - rid: 1930289502514577564
+        - rid: 1930289502514577565
+        FieldOffset: 48
+        FieldSize: 16
+        SpecialType: 0
+    - rid: 1930289502514577550
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: x
+        FieldTypeName: Single
+        FieldTypeDefinition: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+        SaveKey: 0
+        FieldTypeIndex: 0
+        Enabled: 1
+        MemCopy: 0
+        Fields: []
+        FieldOffset: 0
+        FieldSize: 4
+        SpecialType: 0
+    - rid: 1930289502514577551
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: y
+        FieldTypeName: Single
+        FieldTypeDefinition: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+        SaveKey: 1
+        FieldTypeIndex: 1
+        Enabled: 1
+        MemCopy: 0
+        Fields: []
+        FieldOffset: 4
+        FieldSize: 4
+        SpecialType: 0
+    - rid: 1930289502514577552
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: z
+        FieldTypeName: Single
+        FieldTypeDefinition: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+        SaveKey: 2
+        FieldTypeIndex: 2
+        Enabled: 1
+        MemCopy: 0
+        Fields: []
+        FieldOffset: 8
+        FieldSize: 4
+        SpecialType: 0
+    - rid: 1930289502514577553
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: w
+        FieldTypeName: Single
+        FieldTypeDefinition: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+        SaveKey: 3
+        FieldTypeIndex: 3
+        Enabled: 1
+        MemCopy: 0
+        Fields: []
+        FieldOffset: 12
+        FieldSize: 4
+        SpecialType: 0
+    - rid: 1930289502514577554
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: x
+        FieldTypeName: Single
+        FieldTypeDefinition: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+        SaveKey: 0
+        FieldTypeIndex: 0
+        Enabled: 1
+        MemCopy: 0
+        Fields: []
+        FieldOffset: 0
+        FieldSize: 4
+        SpecialType: 0
+    - rid: 1930289502514577555
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: y
+        FieldTypeName: Single
+        FieldTypeDefinition: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+        SaveKey: 1
+        FieldTypeIndex: 1
+        Enabled: 1
+        MemCopy: 0
+        Fields: []
+        FieldOffset: 4
+        FieldSize: 4
+        SpecialType: 0
+    - rid: 1930289502514577556
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: z
+        FieldTypeName: Single
+        FieldTypeDefinition: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+        SaveKey: 2
+        FieldTypeIndex: 2
+        Enabled: 1
+        MemCopy: 0
+        Fields: []
+        FieldOffset: 8
+        FieldSize: 4
+        SpecialType: 0
+    - rid: 1930289502514577557
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: w
+        FieldTypeName: Single
+        FieldTypeDefinition: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+        SaveKey: 3
+        FieldTypeIndex: 3
+        Enabled: 1
+        MemCopy: 0
+        Fields: []
+        FieldOffset: 12
+        FieldSize: 4
+        SpecialType: 0
+    - rid: 1930289502514577558
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: x
+        FieldTypeName: Single
+        FieldTypeDefinition: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+        SaveKey: 0
+        FieldTypeIndex: 0
+        Enabled: 1
+        MemCopy: 0
+        Fields: []
+        FieldOffset: 0
+        FieldSize: 4
+        SpecialType: 0
+    - rid: 1930289502514577559
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: y
+        FieldTypeName: Single
+        FieldTypeDefinition: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+        SaveKey: 1
+        FieldTypeIndex: 1
+        Enabled: 1
+        MemCopy: 0
+        Fields: []
+        FieldOffset: 4
+        FieldSize: 4
+        SpecialType: 0
+    - rid: 1930289502514577560
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: z
+        FieldTypeName: Single
+        FieldTypeDefinition: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+        SaveKey: 2
+        FieldTypeIndex: 2
+        Enabled: 1
+        MemCopy: 0
+        Fields: []
+        FieldOffset: 8
+        FieldSize: 4
+        SpecialType: 0
+    - rid: 1930289502514577561
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: w
+        FieldTypeName: Single
+        FieldTypeDefinition: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+        SaveKey: 3
+        FieldTypeIndex: 3
+        Enabled: 1
+        MemCopy: 0
+        Fields: []
+        FieldOffset: 12
+        FieldSize: 4
+        SpecialType: 0
+    - rid: 1930289502514577562
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: x
+        FieldTypeName: Single
+        FieldTypeDefinition: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+        SaveKey: 0
+        FieldTypeIndex: 0
+        Enabled: 1
+        MemCopy: 0
+        Fields: []
+        FieldOffset: 0
+        FieldSize: 4
+        SpecialType: 0
+    - rid: 1930289502514577563
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: y
+        FieldTypeName: Single
+        FieldTypeDefinition: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+        SaveKey: 1
+        FieldTypeIndex: 1
+        Enabled: 1
+        MemCopy: 0
+        Fields: []
+        FieldOffset: 4
+        FieldSize: 4
+        SpecialType: 0
+    - rid: 1930289502514577564
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: z
+        FieldTypeName: Single
+        FieldTypeDefinition: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+        SaveKey: 2
+        FieldTypeIndex: 2
+        Enabled: 1
+        MemCopy: 0
+        Fields: []
+        FieldOffset: 8
+        FieldSize: 4
+        SpecialType: 0
+    - rid: 1930289502514577565
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: w
+        FieldTypeName: Single
+        FieldTypeDefinition: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+        SaveKey: 3
+        FieldTypeIndex: 3
+        Enabled: 1
+        MemCopy: 0
+        Fields: []
+        FieldOffset: 12
+        FieldSize: 4
+        SpecialType: 0
+    - rid: 1930289502514577566
+      type: {class: SavedTypeAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        TypeName: LocalTransform
+        StableTypeHash: 7264489596598919448
+        Fields:
+        - rid: 1930289502514577567
+        - rid: 1930289502514577568
+        - rid: 1930289502514577569
+        Type: 1
+        IsEnableable: 0
+    - rid: 1930289502514577567
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: Position
+        FieldTypeName: float3
+        FieldTypeDefinition: Unity.Mathematics.float3, Unity.Mathematics, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        SaveKey: 0
+        FieldTypeIndex: 0
+        Enabled: 1
+        MemCopy: 0
+        Fields:
+        - rid: 1930289502514577570
+        - rid: 1930289502514577571
+        - rid: 1930289502514577572
+        FieldOffset: 0
+        FieldSize: 12
+        SpecialType: 0
+    - rid: 1930289502514577568
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: Scale
+        FieldTypeName: Single
+        FieldTypeDefinition: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+        SaveKey: 1
+        FieldTypeIndex: 1
+        Enabled: 1
+        MemCopy: 0
+        Fields: []
+        FieldOffset: 12
+        FieldSize: 4
+        SpecialType: 0
+    - rid: 1930289502514577569
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: Rotation
+        FieldTypeName: quaternion
+        FieldTypeDefinition: Unity.Mathematics.quaternion, Unity.Mathematics, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        SaveKey: 2
+        FieldTypeIndex: 2
+        Enabled: 1
+        MemCopy: 0
+        Fields:
+        - rid: 1930289502514577573
+        FieldOffset: 16
+        FieldSize: 16
+        SpecialType: 0
+    - rid: 1930289502514577570
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: x
+        FieldTypeName: Single
+        FieldTypeDefinition: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+        SaveKey: 0
+        FieldTypeIndex: 0
+        Enabled: 1
+        MemCopy: 0
+        Fields: []
+        FieldOffset: 0
+        FieldSize: 4
+        SpecialType: 0
+    - rid: 1930289502514577571
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: y
+        FieldTypeName: Single
+        FieldTypeDefinition: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+        SaveKey: 1
+        FieldTypeIndex: 1
+        Enabled: 1
+        MemCopy: 0
+        Fields: []
+        FieldOffset: 4
+        FieldSize: 4
+        SpecialType: 0
+    - rid: 1930289502514577572
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: z
+        FieldTypeName: Single
+        FieldTypeDefinition: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+        SaveKey: 2
+        FieldTypeIndex: 2
+        Enabled: 1
+        MemCopy: 0
+        Fields: []
+        FieldOffset: 8
+        FieldSize: 4
+        SpecialType: 0
+    - rid: 1930289502514577573
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: value
+        FieldTypeName: float4
+        FieldTypeDefinition: Unity.Mathematics.float4, Unity.Mathematics, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        SaveKey: 0
+        FieldTypeIndex: 0
+        Enabled: 1
+        MemCopy: 0
+        Fields:
+        - rid: 1930289502514577574
+        - rid: 1930289502514577575
+        - rid: 1930289502514577576
+        - rid: 1930289502514577577
+        FieldOffset: 0
+        FieldSize: 16
+        SpecialType: 0
+    - rid: 1930289502514577574
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: x
+        FieldTypeName: Single
+        FieldTypeDefinition: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+        SaveKey: 0
+        FieldTypeIndex: 0
+        Enabled: 1
+        MemCopy: 0
+        Fields: []
+        FieldOffset: 0
+        FieldSize: 4
+        SpecialType: 0
+    - rid: 1930289502514577575
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: y
+        FieldTypeName: Single
+        FieldTypeDefinition: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+        SaveKey: 1
+        FieldTypeIndex: 1
+        Enabled: 1
+        MemCopy: 0
+        Fields: []
+        FieldOffset: 4
+        FieldSize: 4
+        SpecialType: 0
+    - rid: 1930289502514577576
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: z
+        FieldTypeName: Single
+        FieldTypeDefinition: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+        SaveKey: 2
+        FieldTypeIndex: 2
+        Enabled: 1
+        MemCopy: 0
+        Fields: []
+        FieldOffset: 8
+        FieldSize: 4
+        SpecialType: 0
+    - rid: 1930289502514577577
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: w
+        FieldTypeName: Single
+        FieldTypeDefinition: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+        SaveKey: 3
+        FieldTypeIndex: 3
+        Enabled: 1
+        MemCopy: 0
+        Fields: []
+        FieldOffset: 12
+        FieldSize: 4
+        SpecialType: 0
+    - rid: 1930289502514577578
+      type: {class: SavedTypeAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        TypeName: SavableEnableableComp
+        StableTypeHash: 1226522382493115059
+        Fields:
+        - rid: 1930289502514577579
+        Type: 1
+        IsEnableable: 1
+    - rid: 1930289502514577579
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: Value
+        FieldTypeName: Single
+        FieldTypeDefinition: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+        SaveKey: 0
+        FieldTypeIndex: 0
+        Enabled: 1
+        MemCopy: 0
+        Fields: []
+        FieldOffset: 0
+        FieldSize: 4
+        SpecialType: 0
+    - rid: 1930289502514577580
+      type: {class: SavedTypeAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        TypeName: SavableComponent
+        StableTypeHash: 15575273459047686991
+        Fields:
+        - rid: 1930289502514577581
+        - rid: 1930289502514577582
+        - rid: 1930289502514577583
+        - rid: 1930289502514577584
+        - rid: 1930289502514577585
+        - rid: 1930289502514577586
+        Type: 1
+        IsEnableable: 0
+    - rid: 1930289502514577581
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: Value1
+        FieldTypeName: Int32
+        FieldTypeDefinition: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+        SaveKey: 0
+        FieldTypeIndex: 0
+        Enabled: 1
+        MemCopy: 0
+        Fields: []
+        FieldOffset: 0
+        FieldSize: 4
+        SpecialType: 0
+    - rid: 1930289502514577582
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: Value2
+        FieldTypeName: Int32
+        FieldTypeDefinition: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+        SaveKey: 1
+        FieldTypeIndex: 1
+        Enabled: 1
+        MemCopy: 0
+        Fields: []
+        FieldOffset: 4
+        FieldSize: 4
+        SpecialType: 0
+    - rid: 1930289502514577583
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: Value21
+        FieldTypeName: Int32
+        FieldTypeDefinition: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+        SaveKey: 2
+        FieldTypeIndex: 2
+        Enabled: 1
+        MemCopy: 0
+        Fields: []
+        FieldOffset: 8
+        FieldSize: 4
+        SpecialType: 0
+    - rid: 1930289502514577584
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: ToBeChangedStruct
+        FieldTypeName: ToBeChangedStruct
+        FieldTypeDefinition: NZCore.Saving.ToBeChangedStruct, Saving.Sample, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        SaveKey: 3
+        FieldTypeIndex: 3
+        Enabled: 1
+        MemCopy: 0
+        Fields:
+        - rid: 1930289502514577587
+        FieldOffset: 12
+        FieldSize: 12
+        SpecialType: 0
+    - rid: 1930289502514577585
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: List
+        FieldTypeName: ListElement
+        FieldTypeDefinition: NZCore.Saving.ListElement, Saving.Sample, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        SaveKey: 4
+        FieldTypeIndex: 4
+        Enabled: 1
+        MemCopy: 0
+        Fields:
+        - rid: 1930289502514577588
+        - rid: 1930289502514577589
+        - rid: 1930289502514577590
+        - rid: 1930289502514577591
+        FieldOffset: 24
+        FieldSize: 16
+        SpecialType: 3
+    - rid: 1930289502514577586
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: Value3
+        FieldTypeName: Int32
+        FieldTypeDefinition: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+        SaveKey: 5
+        FieldTypeIndex: 5
+        Enabled: 1
+        MemCopy: 0
+        Fields: []
+        FieldOffset: 32
+        FieldSize: 4
+        SpecialType: 0
+    - rid: 1930289502514577587
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: FloatValue
+        FieldTypeName: float3
+        FieldTypeDefinition: Unity.Mathematics.float3, Unity.Mathematics, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        SaveKey: 0
+        FieldTypeIndex: 0
+        Enabled: 1
+        MemCopy: 0
+        Fields:
+        - rid: 1930289502514577592
+        - rid: 1930289502514577593
+        - rid: 1930289502514577594
+        FieldOffset: 0
+        FieldSize: 12
+        SpecialType: 0
+    - rid: 1930289502514577588
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: Value1
+        FieldTypeName: Int32
+        FieldTypeDefinition: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+        SaveKey: 0
+        FieldTypeIndex: 0
+        Enabled: 1
+        MemCopy: 0
+        Fields: []
+        FieldOffset: 0
+        FieldSize: 4
+        SpecialType: 0
+    - rid: 1930289502514577589
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: Value2
+        FieldTypeName: Int32
+        FieldTypeDefinition: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+        SaveKey: 1
+        FieldTypeIndex: 1
+        Enabled: 1
+        MemCopy: 0
+        Fields: []
+        FieldOffset: 4
+        FieldSize: 4
+        SpecialType: 0
+    - rid: 1930289502514577590
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: ValueBetween
+        FieldTypeName: Int32
+        FieldTypeDefinition: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+        SaveKey: 2
+        FieldTypeIndex: 2
+        Enabled: 1
+        MemCopy: 0
+        Fields: []
+        FieldOffset: 8
+        FieldSize: 4
+        SpecialType: 0
+    - rid: 1930289502514577591
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: Value3
+        FieldTypeName: Int32
+        FieldTypeDefinition: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+        SaveKey: 3
+        FieldTypeIndex: 3
+        Enabled: 1
+        MemCopy: 0
+        Fields: []
+        FieldOffset: 12
+        FieldSize: 4
+        SpecialType: 0
+    - rid: 1930289502514577592
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: x
+        FieldTypeName: Single
+        FieldTypeDefinition: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+        SaveKey: 0
+        FieldTypeIndex: 0
+        Enabled: 1
+        MemCopy: 0
+        Fields: []
+        FieldOffset: 0
+        FieldSize: 4
+        SpecialType: 0
+    - rid: 1930289502514577593
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: y
+        FieldTypeName: Single
+        FieldTypeDefinition: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+        SaveKey: 1
+        FieldTypeIndex: 1
+        Enabled: 1
+        MemCopy: 0
+        Fields: []
+        FieldOffset: 4
+        FieldSize: 4
+        SpecialType: 0
+    - rid: 1930289502514577594
+      type: {class: SavedFieldAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
+      data:
+        FieldName: z
+        FieldTypeName: Single
+        FieldTypeDefinition: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+        SaveKey: 2
+        FieldTypeIndex: 2
+        Enabled: 1
+        MemCopy: 0
+        Fields: []
+        FieldOffset: 8
+        FieldSize: 4
+        SpecialType: 0

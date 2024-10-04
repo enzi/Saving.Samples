@@ -1,0 +1,6 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:VisualElement style="flex-grow: 0; flex-direction: row; height: 50px;">
+        <engine:Label text="Name" name="character-name" style="flex-grow: 1; color: rgb(183, 183, 183);" />
+        <engine:Label text="Level 1" name="character-level" style="width: 75px; color: rgb(183, 183, 183);" />
+    </engine:VisualElement>
+</engine:UXML>

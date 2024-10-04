@@ -1,0 +1,27 @@
+{
+    "name": "Saving.Sample",
+    "rootNamespace": "",
+    "references": [
+        "Unity.Burst",
+        "Unity.Collections",
+        "Unity.Entities",
+        "Unity.Mathematics",
+        "Unity.Entities.Hybrid",
+        "NZCore.Saving.Data",
+        "Unity.Transforms",
+        "NZCore",
+        "NZCore.UI",
+        "NZCore.Saving.Systems",
+        "Unity.Scenes",
+        "NZCore.Editor"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
