@@ -2,6 +2,8 @@
 // Copyright © 2024 Thomas Enzenebner. All rights reserved.
 // </copyright>
 
+using NZCore;
+using NZCore.Saving;
 using Unity.Entities;
 using UnityEngine;
 
@@ -23,7 +25,18 @@ namespace Saving.Sample
                     Amount = authoring.Amount,
                     Interval = authoring.Interval
                 });
+                
+                var ent = CreateAdditionalEntity(TransformUsageFlags.None, false, "test entity");
+                AddComponent(ent, new SavableEntity());
+                AddComponent(ent, new AdditionalTestData());
+                AddComponent(ent, new DestroyEntity());
+                SetComponentEnabled<DestroyEntity>(ent, false);
             }
         }
+    }
+
+    public struct AdditionalTestData : IComponentData, ISavable
+    {
+        public int Value;
     }
 }
