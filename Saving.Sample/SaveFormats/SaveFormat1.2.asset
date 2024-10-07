@@ -424,7 +424,7 @@ MonoBehaviour:
         SaveKey: 0
         FieldTypeIndex: 0
         Enabled: 1
-        MemCopy: 0
+        MemCopy: 1
         Fields:
         - rid: 1930289502514577621
         - rid: 1930289502514577622
@@ -459,7 +459,7 @@ MonoBehaviour:
         SaveKey: 2
         FieldTypeIndex: 2
         Enabled: 1
-        MemCopy: 0
+        MemCopy: 1
         Fields:
         - rid: 1930289502514577624
         FieldOffset: 16
@@ -699,7 +699,7 @@ MonoBehaviour:
         SaveKey: 3
         FieldTypeIndex: 3
         Enabled: 1
-        MemCopy: 0
+        MemCopy: 1
         Fields:
         - rid: 1930289502514577638
         FieldOffset: 12
@@ -716,7 +716,7 @@ MonoBehaviour:
         SaveKey: 4
         FieldTypeIndex: 4
         Enabled: 1
-        MemCopy: 0
+        MemCopy: 1
         Fields:
         - rid: 1930289502514577639
         - rid: 1930289502514577640
@@ -1002,7 +1002,7 @@ MonoBehaviour:
         SaveKey: 0
         FieldTypeIndex: 0
         Enabled: 1
-        MemCopy: 0
+        MemCopy: 1
         Fields:
         - rid: 1930289525845131335
         - rid: 1930289525845131336
@@ -2319,7 +2319,7 @@ MonoBehaviour:
         SaveKey: 1
         FieldTypeIndex: 1
         Enabled: 1
-        MemCopy: 0
+        MemCopy: 1
         Fields:
         - rid: 1930289579200086038
         FieldOffset: 2
@@ -2432,7 +2432,7 @@ MonoBehaviour:
         SaveKey: 8
         FieldTypeIndex: 8
         Enabled: 1
-        MemCopy: 0
+        MemCopy: 1
         Fields:
         - rid: 1930289579200086039
         - rid: 1930289579200086040
@@ -2450,7 +2450,7 @@ MonoBehaviour:
         SaveKey: 9
         FieldTypeIndex: 9
         Enabled: 1
-        MemCopy: 0
+        MemCopy: 1
         Fields:
         - rid: 1930289579200086041
         - rid: 1930289579200086042
@@ -2468,7 +2468,7 @@ MonoBehaviour:
         SaveKey: 10
         FieldTypeIndex: 10
         Enabled: 1
-        MemCopy: 0
+        MemCopy: 1
         Fields:
         - rid: 1930289579200086043
         - rid: 1930289579200086044
@@ -2486,7 +2486,7 @@ MonoBehaviour:
         SaveKey: 11
         FieldTypeIndex: 11
         Enabled: 1
-        MemCopy: 0
+        MemCopy: 1
         Fields:
         - rid: 1930289579200086045
         - rid: 1930289579200086046
@@ -2504,7 +2504,7 @@ MonoBehaviour:
         SaveKey: 12
         FieldTypeIndex: 12
         Enabled: 1
-        MemCopy: 0
+        MemCopy: 1
         Fields:
         - rid: 1930289579200086047
         - rid: 1930289579200086048
@@ -2522,7 +2522,7 @@ MonoBehaviour:
         SaveKey: 13
         FieldTypeIndex: 13
         Enabled: 1
-        MemCopy: 0
+        MemCopy: 1
         Fields:
         - rid: 1930289579200086049
         - rid: 1930289579200086050
@@ -2540,7 +2540,7 @@ MonoBehaviour:
         SaveKey: 14
         FieldTypeIndex: 14
         Enabled: 1
-        MemCopy: 0
+        MemCopy: 1
         Fields:
         - rid: 1930289579200086051
         - rid: 1930289579200086052
@@ -2567,7 +2567,7 @@ MonoBehaviour:
         SaveKey: 15
         FieldTypeIndex: 15
         Enabled: 1
-        MemCopy: 0
+        MemCopy: 1
         Fields:
         - rid: 1930289579200086062
         - rid: 1930289579200086063
@@ -2585,7 +2585,7 @@ MonoBehaviour:
         SaveKey: 16
         FieldTypeIndex: 16
         Enabled: 1
-        MemCopy: 0
+        MemCopy: 1
         Fields:
         - rid: 1930289579200086064
         - rid: 1930289579200086065
@@ -2604,7 +2604,7 @@ MonoBehaviour:
         SaveKey: 17
         FieldTypeIndex: 17
         Enabled: 1
-        MemCopy: 0
+        MemCopy: 1
         Fields:
         - rid: 1930289579200086067
         - rid: 1930289579200086068
@@ -2624,7 +2624,7 @@ MonoBehaviour:
         SaveKey: 18
         FieldTypeIndex: 18
         Enabled: 1
-        MemCopy: 0
+        MemCopy: 1
         Fields:
         - rid: 1930289579200086071
         FieldOffset: 4932
@@ -2641,7 +2641,7 @@ MonoBehaviour:
         SaveKey: 19
         FieldTypeIndex: 19
         Enabled: 1
-        MemCopy: 0
+        MemCopy: 1
         Fields:
         - rid: 1930289579200086072
         - rid: 1930289579200086073
@@ -2661,7 +2661,7 @@ MonoBehaviour:
         SaveKey: 20
         FieldTypeIndex: 20
         Enabled: 1
-        MemCopy: 0
+        MemCopy: 1
         Fields:
         - rid: 1930289579200086076
         - rid: 1930289579200086077
