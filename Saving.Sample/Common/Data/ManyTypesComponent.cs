@@ -1,4 +1,4 @@
-// <copyright project="Saving.Sample" file="ManyTyesComponent.cs" version="0.1">
+// <copyright project="Saving.Sample" file="ManyTypesComponent.cs">
 // Copyright © 2024 Thomas Enzenebner. All rights reserved.
 // </copyright>
 

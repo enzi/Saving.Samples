@@ -1,4 +1,4 @@
-// <copyright project="NZCore" file="EnableableMenuSystem.cs" version="0.1">
+// <copyright project="Saving.Sample" file="EnableableMenuSystem.cs">
 // Copyright © 2024 Thomas Enzenebner. All rights reserved.
 // </copyright>
 

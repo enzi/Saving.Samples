@@ -1,4 +1,4 @@
-// <copyright project="NZCore" file="SavableEnablableComp.cs" version="0.1">
+// <copyright project="Saving.Sample" file="SavableEnablableComp.cs">
 // Copyright © 2024 Thomas Enzenebner. All rights reserved.
 // </copyright>
 
@@ -7,8 +7,5 @@ using Unity.Entities;
 
 namespace Saving.Sample.Data
 {
-    public struct SavableEnableableComp : IComponentData, ISavable, IEnableableComponent
-    {
-        public float Value;
-    }
+    public struct SavableEnableableComp : IComponentData, ISavable, IEnableableComponent { }
 }

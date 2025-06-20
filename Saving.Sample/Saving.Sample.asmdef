@@ -7,13 +7,15 @@
         "Unity.Entities",
         "Unity.Mathematics",
         "Unity.Entities.Hybrid",
+        "Unity.Entities.Graphics",
         "NZCore.Saving.Data",
         "Unity.Transforms",
         "NZCore",
         "NZCore.UI",
         "NZCore.Saving.Systems",
         "Unity.Scenes",
-        "NZCore.Editor"
+        "NZCore.Editor",
+        "NZCore.Saving.Authoring.Editor"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

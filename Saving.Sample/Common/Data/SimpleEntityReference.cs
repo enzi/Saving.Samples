@@ -1,4 +1,4 @@
-// <copyright project="Saving.Sample" file="SimpleEntityReference.cs" version="0.1">
+// <copyright project="Saving.Sample" file="SimpleEntityReference.cs">
 // Copyright © 2024 Thomas Enzenebner. All rights reserved.
 // </copyright>
 

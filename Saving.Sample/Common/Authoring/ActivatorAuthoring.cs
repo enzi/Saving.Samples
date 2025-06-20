@@ -1,4 +1,4 @@
-// <copyright project="NZCore" file="ActivatorAuthoring.cs" version="0.1">
+// <copyright project="Saving.Sample" file="ActivatorAuthoring.cs">
 // Copyright © 2024 Thomas Enzenebner. All rights reserved.
 // </copyright>
 
@@ -48,6 +48,14 @@ namespace Saving.Sample
                     case SampleType.Game:
                         AddComponent(entity, new ActivatorGame());
                         break;
+                    case SampleType.SharedComponents:
+                        AddComponent(entity, new ActivatorSharedComponents());
+                        AddComponent(entity, new ActivatorLoadSaveInterface());
+                        break;
+                    case SampleType.TestScene:
+                        AddComponent(entity, new ActivatorTestScene());
+                        AddComponent(entity, new ActivatorLoadSaveInterface());
+                        break;
                     default:
                         throw new ArgumentOutOfRangeException();
                 }
@@ -64,6 +72,8 @@ namespace Saving.Sample
         Migration,
         NestedData,
         MultipleSaveGames,
-        Game
+        Game,
+        SharedComponents,
+        TestScene
     }
 }

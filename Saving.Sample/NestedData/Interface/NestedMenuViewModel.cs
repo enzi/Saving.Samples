@@ -1,4 +1,4 @@
-// <copyright project="NZCore" file="NestedMenuViewModel.cs" version="0.1">
+// <copyright project="Saving.Sample" file="NestedMenuViewModel.cs">
 // Copyright © 2024 Thomas Enzenebner. All rights reserved.
 // </copyright>
 
@@ -111,8 +111,8 @@ namespace Saving.Sample
             public bool Changed;
             
 
-            public bool ListValid => componentData.List != null && componentData.List->IsCreated;
-            public ref UnsafeList<ListElement> ListRef => ref * componentData.List;
+            public bool ListValid => componentData.ListCreated && componentData.ListAccessor.IsCreated;
+            public ref UnsafeList<ListElement> ListRef => ref componentData.ListAccessor;
 
             public SavableComponent ComponentData
             {

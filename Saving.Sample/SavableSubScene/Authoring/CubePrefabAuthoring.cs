@@ -1,4 +1,4 @@
-// <copyright project="NZCore" file="CubePrefabAuthoring.cs" version="0.1">
+// <copyright project="Saving.Sample" file="CubePrefabAuthoring.cs">
 // Copyright © 2024 Thomas Enzenebner. All rights reserved.
 // </copyright>
 

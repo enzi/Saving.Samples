@@ -1,4 +1,4 @@
-// <copyright project="NZCore" file="SpawnCubeMenuSystem.cs" version="0.1">
+// <copyright project="Saving.Sample" file="SpawnCubeMenuSystem.cs">
 // Copyright © 2024 Thomas Enzenebner. All rights reserved.
 // </copyright>
 
@@ -33,6 +33,7 @@ namespace Saving.Sample
             
             state.RequireForUpdate<UIAssetsLoaded>();
             state.RequireForUpdate<ActivatorSavableSubScene>();
+            state.RequireForUpdate<CubeSpawnerPrefab>();
         }
 
         public void OnStartRunning(ref SystemState state)
@@ -54,25 +55,25 @@ namespace Saving.Sample
             
             if (ui.Model.CreateSpawner)
             {
-                Debug.Log("CreateSpawner");
-                var newSpawner = state.EntityManager.CreateEntity();
-                state.EntityManager.AddComponentData(newSpawner, new CubeSpawner
-                {
-                    Amount = 10,
-                    Interval = 5
-                });
+                //Debug.Log("CreateSpawner");
+                // 
+                // create a new spawner, this time though it won't be a subscene entity
+                // because we don't add any subScene section data, making this entity global
+                // for the saving system it doesn't make a difference other than 
+                // it's located in Global in the SaveGame viewer
+                var spawnerPrefab = SystemAPI.GetSingleton<CubeSpawnerPrefab>();
+                state.EntityManager.Instantiate(spawnerPrefab.Prefab);
             }
 
             if (ui.Model.DestroySpawner)
             {
-                Debug.Log("DestroySpawner");
-                state.EntityManager.DestroyEntity(spawnerQuery);
+                var spawners = spawnerQuery.ToEntityArray(Allocator.Temp);
+                state.EntityManager.DestroyEntity(spawners);
+                //state.EntityManager.DestroyEntity(spawnerQuery);
             }
             
             if (ui.Model.SpawnCube)
             {
-                //Debug.Log("Spawn cube");
-                
                 var prefab = SystemAPI.GetSingleton<CubePrefab>();
 
                 int amount = 10;

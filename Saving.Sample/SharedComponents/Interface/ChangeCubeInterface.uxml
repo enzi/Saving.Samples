@@ -1,0 +1,11 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:VisualElement name="container" data-source-type="Saving.Sample.MenuViewModel, Saving.Sample" picking-mode="Ignore" style="flex-grow: 0; flex-shrink: 1;">
+        <engine:VisualElement name="VisualElement" style="flex-grow: 1; position: absolute; align-self: center; align-items: auto; align-content: auto; flex-direction: column;">            
+            <NZCore.UI.BindableButton text="Change random SharedComponent Group" name="btn-change-group" style="width: 357px; align-items: auto; justify-content: flex-start; align-self: center; position: relative;">
+                <Bindings>
+                    <engine:DataBinding property="wasClicked" data-source-path="ChangeCube" data-source-type="Saving.Sample.ChangeCubeViewModel, Saving.Sample" binding-mode="ToSource" />
+                </Bindings>
+            </NZCore.UI.BindableButton>
+        </engine:VisualElement>        
+    </engine:VisualElement>
+</engine:UXML>

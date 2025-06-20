@@ -207,6 +207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FileName: SavableSubScene.sav
+  LoadDuringEditor: 0
 --- !u!4 &1561252537
 Transform:
   m_ObjectHideFlags: 0

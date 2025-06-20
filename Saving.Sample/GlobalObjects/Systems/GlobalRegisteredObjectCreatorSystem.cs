@@ -1,4 +1,4 @@
-// <copyright project="NZCore" file="GlobalRegisteredObjectCreatorSystem.cs" version="0.1">
+// <copyright project="Saving.Sample" file="GlobalRegisteredObjectCreatorSystem.cs">
 // Copyright © 2024 Thomas Enzenebner. All rights reserved.
 // </copyright>
 
@@ -41,7 +41,7 @@ namespace Saving.Sample
             lastTime = -1.0;
             
             var updateMethod = BurstCompiler.CompileFunctionPointer<OnUpdateSaveState>(SaveRegisteredObject);
-            var register = SystemAPI.GetSingleton<RegisterSaveObjectsSingleton>();
+            var register = SystemAPI.GetSingleton<RegisterSaveObjectsRequestsSingleton>();
             
             // simpler version
             // {

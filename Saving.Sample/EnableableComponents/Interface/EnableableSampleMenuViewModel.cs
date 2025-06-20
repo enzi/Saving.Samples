@@ -1,4 +1,4 @@
-// <copyright project="NZCore" file="EnableableSampleMenuViewModel.cs" version="0.1">
+// <copyright project="Saving.Sample" file="EnableableSampleMenuViewModel.cs">
 // Copyright © 2024 Thomas Enzenebner. All rights reserved.
 // </copyright>
 

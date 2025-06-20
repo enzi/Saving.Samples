@@ -1,4 +1,4 @@
-// <copyright project="Saving.Sample" file="CharacterCreateData.cs" version="0.1">
+// <copyright project="Saving.Sample" file="CharacterCreateData.cs">
 // Copyright © 2024 Thomas Enzenebner. All rights reserved.
 // </copyright>
 

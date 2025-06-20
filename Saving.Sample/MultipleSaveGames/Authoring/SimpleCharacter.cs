@@ -1,4 +1,4 @@
-// <copyright project="Saving.Sample" file="SimpleCharacter.cs" version="0.1">
+// <copyright project="Saving.Sample" file="SimpleCharacter.cs">
 // Copyright © 2024 Thomas Enzenebner. All rights reserved.
 // </copyright>
 
@@ -13,7 +13,7 @@ namespace Saving.Sample
         public int Level;
         public string Name;
         
-        private class GameSceneReferenceAuthoringBaker : Baker<SimpleCharacter>
+        private class SimpleCharacterAuthoringBaker : Baker<SimpleCharacter>
         {
             public override void Bake(SimpleCharacter authoring)
             {

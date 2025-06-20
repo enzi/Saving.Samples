@@ -1,4 +1,4 @@
-// <copyright project="NZCore" file="CubeSpawnerAuthoring.cs" version="0.1">
+// <copyright project="Saving.Sample" file="CubeSpawnerAuthoring.cs">
 // Copyright © 2024 Thomas Enzenebner. All rights reserved.
 // </copyright>
 
@@ -26,11 +26,29 @@ namespace Saving.Sample
                     Interval = authoring.Interval
                 });
                 
-                var ent = CreateAdditionalEntity(TransformUsageFlags.None, false, "test entity");
-                AddComponent(ent, new SavableEntity());
-                AddComponent(ent, new AdditionalTestData());
-                AddComponent(ent, new DestroyEntity());
-                SetComponentEnabled<DestroyEntity>(ent, false);
+                // a test case for a additional savable entity
+                //
+                // var ent = CreateAdditionalEntity(TransformUsageFlags.None, false, "test entity 1");
+                // AddComponent(ent, new SavableEntity());
+                // AddComponent(ent, new AdditionalTestData());
+                // AddComponent(ent, new DestroyEntity());
+                // AddComponent(ent, new SavableAdditionalIndex(0));
+                // SetComponentEnabled<DestroyEntity>(ent, false);
+                //
+                // var ent2 = CreateAdditionalEntity(TransformUsageFlags.None, false, "test entity 2");
+                // AddComponent(ent2, new SavableEntity());
+                // AddComponent(ent2, new AdditionalTestData());
+                // AddComponent(ent2, new DestroyEntity());
+                // AddComponent(ent2, new SavableAdditionalIndex(1));
+                // SetComponentEnabled<DestroyEntity>(ent2, false);
+                
+                // AddComponent(entity, new ToBeSplitTest()
+                // {
+                //     Value1 = 10,
+                //     Value2 = 20,
+                //     Value3 = 30,
+                //     Value4 = 40
+                // });
             }
         }
     }

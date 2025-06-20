@@ -1,8 +1,7 @@
-// <copyright project="NZCore" file="CubeSpawnerSystem.cs" version="0.1">
+// <copyright project="Saving.Sample" file="CubeSpawnerSystem.cs">
 // Copyright © 2024 Thomas Enzenebner. All rights reserved.
 // </copyright>
 
-using NZCore.Saving;
 using Unity.Collections;
 using Unity.Entities;
 using Unity.Mathematics;
@@ -37,12 +36,14 @@ namespace Saving.Sample
             var prefab = SystemAPI.GetSingleton<CubePrefab>();
             var spawnerEntities = spawnerQuery.ToEntityArray(Allocator.Temp);
             Random random = new Random(123 + (uint) elapsedTime);
+
+            var currentLastTime = lastTime;
             
             foreach (var spawnerEntity in spawnerEntities)
             {
                 var spawner = SystemAPI.GetComponent<CubeSpawner>(spawnerEntity);
 
-                if (elapsedTime > lastTime + spawner.Interval)
+                if (elapsedTime > currentLastTime + spawner.Interval)
                 {
                     lastTime = elapsedTime;
                 }

@@ -1,4 +1,4 @@
-// <copyright project="Saving.Sample" file="GameSceneReferenceAuthoring.cs" version="0.1">
+// <copyright project="Saving.Sample" file="GameSceneReferenceAuthoring.cs">
 // Copyright © 2024 Thomas Enzenebner. All rights reserved.
 // </copyright>
 
@@ -9,6 +9,7 @@ using UnityEngine;
 
 namespace Saving.Sample
 {
+#if UNITY_EDITOR
     public class GameSceneReferenceAuthoring : MonoBehaviour
     {
         public SceneAsset GameSubScene;
@@ -27,4 +28,5 @@ namespace Saving.Sample
             }
         }
     }
+#endif
 }

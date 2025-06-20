@@ -14,71 +14,61 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SaveFormatMigrationPlanValue:
     _value: 1
+  Enabled: 1
   From: {fileID: 11400000, guid: 5ee308f6cbd4d392d93e12b05a0ecaa6, type: 2}
   To: {fileID: 11400000, guid: 7ff5b40efa54cb38682780ec9d823045, type: 2}
   MetaData:
     MigrationLinks:
-    - FromStableTypeHash: 9601563133883314838
-      ToStableTypeHash: 9601563133883314838
-      FromName: LocalToWorld
-      ToName: 
-      FromIndex: 0
-      ToIndex: 0
-      Status: 1
-      FieldLinks: []
     - FromStableTypeHash: 7264489596598919448
       ToStableTypeHash: 7264489596598919448
       FromName: LocalTransform
       ToName: 
-      FromIndex: 1
-      ToIndex: 1
+      CustomMigration: 0
       Status: 1
       FieldLinks: []
     - FromStableTypeHash: 1226522382493115059
       ToStableTypeHash: 1226522382493115059
       FromName: SavableEnableableComp
       ToName: 
-      FromIndex: 2
-      ToIndex: 2
+      CustomMigration: 0
       Status: 1
       FieldLinks: []
     - FromStableTypeHash: 10403670870664379182
       ToStableTypeHash: 15575273459047686991
       FromName: SavableComponent
-      ToName: 
-      FromIndex: 3
-      ToIndex: 3
+      ToName: SavableComponent
+      CustomMigration: 0
       Status: 2
       FieldLinks:
-      - FromSubIndex: -1
-        FromIndex: 0
-        ToSubIndex: -1
-        ToIndex: 0
-      - FromSubIndex: -1
-        FromIndex: 1
-        ToSubIndex: -1
-        ToIndex: 1
-      - FromSubIndex: -1
-        FromIndex: 2
-        ToSubIndex: -1
-        ToIndex: 2
-      - FromSubIndex: -1
-        FromIndex: 3
-        ToSubIndex: -1
-        ToIndex: 4
-      - FromSubIndex: 3
-        FromIndex: 0
-        ToSubIndex: 4
-        ToIndex: 0
-      - FromSubIndex: 3
-        FromIndex: 1
-        ToSubIndex: 4
-        ToIndex: 1
-      - FromSubIndex: 3
-        FromIndex: 2
-        ToSubIndex: 4
-        ToIndex: 3
-      - FromSubIndex: -1
-        FromIndex: 4
-        ToSubIndex: -1
-        ToIndex: 5
+      - FromFullPortName: Value1
+        ToFullPortName: Value1
+        FromIndices: 00000000
+        ToIndices: 00000000
+      - FromFullPortName: Value2
+        ToFullPortName: Value2
+        FromIndices: 01000000
+        ToIndices: 01000000
+      - FromFullPortName: Value21
+        ToFullPortName: Value21
+        FromIndices: 02000000
+        ToIndices: 02000000
+      - FromFullPortName: List
+        ToFullPortName: List
+        FromIndices: 03000000
+        ToIndices: 04000000
+      - FromFullPortName: List.Value1
+        ToFullPortName: List.Value1
+        FromIndices: 0300000000000000
+        ToIndices: 0400000000000000
+      - FromFullPortName: List.Value2
+        ToFullPortName: List.Value2
+        FromIndices: 0300000001000000
+        ToIndices: 0400000001000000
+      - FromFullPortName: List.Value3
+        ToFullPortName: List.Value3
+        FromIndices: 0300000002000000
+        ToIndices: 0400000003000000
+      - FromFullPortName: Value3
+        ToFullPortName: Value3
+        FromIndices: 04000000
+        ToIndices: 05000000

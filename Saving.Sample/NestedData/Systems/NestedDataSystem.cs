@@ -1,15 +1,11 @@
-// <copyright project="NZCore" file="NestedDataSystem.cs" version="0.1">
+// <copyright project="Saving.Sample" file="NestedDataSystem.cs">
 // Copyright © 2024 Thomas Enzenebner. All rights reserved.
 // </copyright>
 
 using NZCore.Saving;
 using NZCore.UIToolkit;
-using Saving.Sample;
-using Unity.Collections;
-using Unity.Collections.LowLevel.Unsafe;
 using Unity.Entities;
 using Unity.Mathematics;
-using UnityEngine;
 using UnityEngine.UIElements;
 
 namespace Saving.Sample
@@ -17,7 +13,6 @@ namespace Saving.Sample
     public unsafe partial struct NestedDataSystem : ISystem, ISystemStartStop
     {
         private UIHelper<NestedMenuViewModel, NestedMenuViewModel.Data> ui;
-        private UnsafeList<ListElement>* list;
         private Entity globalObjectEntity;
 
         private EntityQuery saveStateLoadedQuery;
@@ -48,24 +43,6 @@ namespace Saving.Sample
             {
                 SaveId = 102
             });
-
-            list = UnsafeList<ListElement>.Create(0, Allocator.Persistent);
-            
-            list->Add(new ListElement()
-            {
-                Value1 = 1,
-                Value2 = 2,
-                Value3 = 3,
-                ValueBetween = 4
-            });
-            
-            list->Add(new ListElement()
-            {
-                Value1 = 5,
-                Value2 = 6,
-                Value3 = 7,
-                ValueBetween = 8
-            });
             
             SavableComponent comp = new SavableComponent()
             {
@@ -74,18 +51,26 @@ namespace Saving.Sample
                 Value3 = 3,
                 Value21 = 4,
                 ToBeChangedStruct = new ToBeChangedStruct() { FloatValue = new float2(3,3)},
-                List = list
             };
-
-            if (list == null)
+            
+            // init the UnsafeList
+            comp.Init();
+            
+            comp.ListAccessor.Add(new ListElement()
             {
-                Debug.Log("list is null");
-            }
-
-            if (comp.List == null)
+                Value1 = 1,
+                Value2 = 2,
+                Value3 = 3,
+                ValueBetween = 4
+            });
+            
+            comp.ListAccessor.Add(new ListElement()
             {
-                Debug.Log("comp list is null");
-            }
+                Value1 = 5,
+                Value2 = 6,
+                Value3 = 7,
+                ValueBetween = 8
+            });
 
             //Debug.Log("setup list");
             state.EntityManager.SetComponentData(globalObjectEntity, comp);
@@ -96,7 +81,8 @@ namespace Saving.Sample
 
         public void OnDestroy(ref SystemState state)
         {
-            list->Dispose();
+            var comp = SystemAPI.GetComponent<SavableComponent>(globalObjectEntity);
+            comp.Dispose();
         }
 
         public void OnStartRunning(ref SystemState state)

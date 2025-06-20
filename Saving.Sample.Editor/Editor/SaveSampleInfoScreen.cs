@@ -1,4 +1,4 @@
-// <copyright project="NZCore.Saving" file="SampleInfoScreen.cs" version="1.0">
+// <copyright project="Saving.Sample.Editor" file="SaveSampleInfoScreen.cs">
 // Copyright © 2024 Thomas Enzenebner. All rights reserved.
 // </copyright>
 
@@ -52,7 +52,7 @@ namespace Saving.Sample.Editor
             EditorGUILayout.Space(10);
             EditorGUILayout.LabelField("The crucial part out of the way.");
             EditorGUILayout.LabelField("Thank you very much for buying this asset!", EditorStyles.boldLabel);
-            EditorGUILayout.LabelField("I hope you like it and if you have any feedback for me, please send me an email.");
+            EditorGUILayout.LabelField("I hope you like it and if you have any feedback for me, please let me know via email or discord.");
             EditorGUILayout.LabelField("Also consider writing a review after some time. Thanks!");
             EditorGUILayout.Space(10);
             
