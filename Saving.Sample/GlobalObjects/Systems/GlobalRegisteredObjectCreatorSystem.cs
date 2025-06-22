@@ -72,12 +72,8 @@ namespace Saving.Sample
         {
             var obj = SystemAPI.GetSingleton<GlobalRegisteredObjectComponent>();
             var obj2 = SystemAPI.GetSingleton<GlobalRegisteredObjectComponent2>();
-
-            if (lastTime < obj.Time)
-            {
-                Debug.Log($"GlobalRegisteredObjectCreatorSystem time {obj.Time} {obj2.AnotherTime}");
-                lastTime = obj.Time;
-            }
+            
+            Debug.Log($"GlobalRegisteredObjectCreatorSystem time {obj.Time} {obj2.AnotherTime}");
         }
 
         // IL2CPP also needs a MonoPInvokeCallback

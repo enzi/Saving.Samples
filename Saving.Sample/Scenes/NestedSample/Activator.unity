@@ -164,6 +164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FileName: NestedSample
+  LoadDuringEditor: 0
 --- !u!1 &714729204
 GameObject:
   m_ObjectHideFlags: 0
@@ -194,7 +195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dfc5d15cf514331b66b7b2e16a3654a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SampleType: 5
+  SampleType: 10
 --- !u!4 &714729206
 Transform:
   m_ObjectHideFlags: 0

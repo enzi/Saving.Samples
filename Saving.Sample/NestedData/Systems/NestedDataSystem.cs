@@ -183,6 +183,7 @@ namespace Saving.Sample
             if (ui.Model.Changed)
             {
                 SystemAPI.SetComponent(globalObjectEntity, ui.Model.ComponentData);
+                ui.Model.Changed = false;
             }
 
             if (!saveStateLoadedQuery.IsEmpty)

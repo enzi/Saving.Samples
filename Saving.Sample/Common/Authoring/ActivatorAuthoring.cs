@@ -24,23 +24,18 @@ namespace Saving.Sample
                         break;
                     case SampleType.SavableSubScene:
                         AddComponent(entity, new ActivatorSavableSubScene());
-                        AddComponent(entity, new ActivatorLoadSaveInterface());
                         break;
                     case SampleType.EnableableComponents:
                         AddComponent(entity, new ActivatorEnableableComponents());
-                        AddComponent(entity, new ActivatorLoadSaveInterface());
                         break;
                     case SampleType.GlobalObjects:
                         AddComponent(entity, new ActivatorGlobalObjects());
-                        AddComponent(entity, new ActivatorLoadSaveInterface());
                         break;
                     case SampleType.Migration:
                         AddComponent(entity, new ActivatorMigration());
-                        AddComponent(entity, new ActivatorLoadSaveInterface());
                         break;
                     case SampleType.NestedData:
                         AddComponent(entity, new ActivatorNestedData());
-                        AddComponent(entity, new ActivatorLoadSaveInterface());
                         break;
                     case SampleType.MultipleSaveGames:
                         AddComponent(entity, new ActivatorMultipleSaveGames());
@@ -50,10 +45,11 @@ namespace Saving.Sample
                         break;
                     case SampleType.SharedComponents:
                         AddComponent(entity, new ActivatorSharedComponents());
-                        AddComponent(entity, new ActivatorLoadSaveInterface());
                         break;
                     case SampleType.TestScene:
                         AddComponent(entity, new ActivatorTestScene());
+                        break;
+                    case SampleType.LoadSaveInterface:
                         AddComponent(entity, new ActivatorLoadSaveInterface());
                         break;
                     default:
@@ -74,6 +70,7 @@ namespace Saving.Sample
         MultipleSaveGames,
         Game,
         SharedComponents,
-        TestScene
+        TestScene,
+        LoadSaveInterface
     }
 }

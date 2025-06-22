@@ -42,7 +42,8 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 12
+  serializedVersion: 13
+  m_BakeOnSceneLoad: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -118,6 +119,51 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &31146832
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 31146834}
+  - component: {fileID: 31146833}
+  m_Layer: 0
+  m_Name: Activator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &31146833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31146832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dfc5d15cf514331b66b7b2e16a3654a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SampleType: 2
+--- !u!4 &31146834
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31146832}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &57277727
 GameObject:
   m_ObjectHideFlags: 0
@@ -265,7 +311,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95df8cbaa3ee4ac3ab7b310e46b6593e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Type: 0
   SaveId: 0
+  TransformUsageFlags: 2
 --- !u!1 &128694912
 GameObject:
   m_ObjectHideFlags: 0
@@ -413,7 +461,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95df8cbaa3ee4ac3ab7b310e46b6593e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Type: 0
   SaveId: 0
+  TransformUsageFlags: 2
 --- !u!1 &346624650
 GameObject:
   m_ObjectHideFlags: 0
@@ -561,7 +611,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95df8cbaa3ee4ac3ab7b310e46b6593e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Type: 0
   SaveId: 0
+  TransformUsageFlags: 2
 --- !u!1 &604404266
 GameObject:
   m_ObjectHideFlags: 0
@@ -709,7 +761,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95df8cbaa3ee4ac3ab7b310e46b6593e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Type: 0
   SaveId: 0
+  TransformUsageFlags: 2
 --- !u!1 &670127979
 GameObject:
   m_ObjectHideFlags: 0
@@ -857,7 +911,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95df8cbaa3ee4ac3ab7b310e46b6593e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Type: 0
   SaveId: 0
+  TransformUsageFlags: 2
 --- !u!1 &1416909270
 GameObject:
   m_ObjectHideFlags: 0
@@ -1005,7 +1061,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95df8cbaa3ee4ac3ab7b310e46b6593e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Type: 0
   SaveId: 0
+  TransformUsageFlags: 2
 --- !u!1 &1480758526
 GameObject:
   m_ObjectHideFlags: 0
@@ -1262,7 +1320,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95df8cbaa3ee4ac3ab7b310e46b6593e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Type: 0
   SaveId: 0
+  TransformUsageFlags: 2
 --- !u!1 &1677333029
 GameObject:
   m_ObjectHideFlags: 0
@@ -1410,7 +1470,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95df8cbaa3ee4ac3ab7b310e46b6593e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Type: 0
   SaveId: 0
+  TransformUsageFlags: 2
 --- !u!1 &2031295376
 GameObject:
   m_ObjectHideFlags: 0
@@ -1558,7 +1620,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95df8cbaa3ee4ac3ab7b310e46b6593e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Type: 0
   SaveId: 0
+  TransformUsageFlags: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1573,3 +1637,4 @@ SceneRoots:
   - {fileID: 604404272}
   - {fileID: 1677333035}
   - {fileID: 1480758530}
+  - {fileID: 31146834}

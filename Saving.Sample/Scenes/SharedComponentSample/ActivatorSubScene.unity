@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dfc5d15cf514331b66b7b2e16a3654a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SampleType: 8
+  SampleType: 10
 --- !u!4 &95411322
 Transform:
   m_ObjectHideFlags: 0
@@ -207,6 +207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FileName: SharedComponents.sav
+  LoadDuringEditor: 0
 --- !u!4 &1561252537
 Transform:
   m_ObjectHideFlags: 0
