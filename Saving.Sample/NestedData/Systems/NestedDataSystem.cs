@@ -176,6 +176,7 @@ namespace Saving.Sample
         public void OnStopRunning(ref SystemState state)
         {
             ui.Unload();
+            state.EntityManager.SetComponentEnabled<SaveStateLoaded>(globalObjectEntity, false);
         }
         
         public void OnUpdate(ref SystemState state)
