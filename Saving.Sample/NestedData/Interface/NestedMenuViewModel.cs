@@ -20,96 +20,54 @@ namespace Saving.Sample
         private Data data;
         public ref Data Value => ref data;
         
-        private List<ListElementClass> listElements = new List<ListElementClass>();
+        private List<ListElementClass> listElements = new();
 
         [CreateProperty]
         public List<ListElementClass> ListElements
         {
             get
             {
-                if (data.ListValid)
+                if (!data.ListValid)
                 {
-                    listElements.Clear();
-                    ref var list = ref data.ListRef;
-                    if (list.Length == 0)
-                    {
-                        Debug.Log($"ListElements Clear copying {list.Length}");
-                    }
-
-                    for (int i = 0; i < list.Length; i++)
-                    {
-                        var item = list[i];
-                        listElements.Add(new ListElementClass()
-                        {
-                            Value1 = item.Value1,
-                            Value2 = item.Value2,
-                            Value3 = item.Value3,
-                            ValueBetween = item.ValueBetween
-                        });
-                    }
+                    return listElements;
                 }
+
+                var newListElements = new List<ListElementClass>();
+                ref var list = ref data.ListRef;
+                if (list.Length == 0)
+                {
+                    Debug.Log($"ListElements Clear copying {list.Length}");
+                }
+
+                foreach (var item in list)
+                {
+                    newListElements.Add(new ListElementClass()
+                    {
+                        Value1 = item.Value1,
+                        Value2 = item.Value2,
+                        Value3 = item.Value3,
+                        ValueBetween = item.ValueBetween
+                    });
+                }
+
+                listElements = newListElements;
 
                 return listElements;
             }
 
-            set
-            {
-                listElements = value;  
-            } 
+            set => listElements = value;
         }
 
         [CreateProperty]
         public SavableComponent ComponentData
         {
             get => data.ComponentData;
-            set
-            {
-                Debug.Log("Set ComponentData");
-                data.ComponentData = value;
-                data.Changed = true;
-            }
+            set => data.ComponentData = value;
         }
 
-        [CreateProperty]
-        public bool ListChanged
-        {
-            get
-            {
-                Debug.Log("Get ListChanged called");
-                return false;
-            }
-            set
-            {
-                Debug.Log("Set ListChanged called");
-                if (!value || !data.ListValid)
-                {
-                    return;
-                }
-                
-                ref var list = ref data.ListRef;
-                list.Clear();
-                
-                if (listElements.Count == 0)
-                    Debug.Log($"ListChanged Clear copying {listElements.Count}");
-
-                foreach (var element in listElements)
-                {
-                    list.Add(new ListElement()
-                    {
-                        Value1 = element.Value1,
-                        Value2 = element.Value2,
-                        Value3 = element.Value3,
-                        ValueBetween = element.ValueBetween
-                    });
-                }
-            }
-        }
-
-        public unsafe struct Data : IModelBindingNotify
+        public struct Data : IModelBindingNotify
         {
             private SavableComponent componentData;
-            public bool Changed;
-            
 
             public bool ListValid => componentData.ListCreated && componentData.ListAccessor.IsCreated;
             public ref UnsafeList<ListElement> ListRef => ref componentData.ListAccessor;
@@ -123,10 +81,10 @@ namespace Saving.Sample
                     this.Notify();
                 }
             }
-            
-            public bool ListChanged
+
+            public void ForceListRefresh()
             {
-                set => this.Notify();
+                this.Notify("ListElements");
             }
             
             public FunctionPointer<OnPropertyChangedDelegate> Notify { get; set; }

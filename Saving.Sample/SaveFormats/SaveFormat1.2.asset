@@ -100854,9 +100854,10 @@ MonoBehaviour:
     - rid: 3353831722893181018
       type: {class: SavedTypeAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
       data:
-        Version: 1
+        Version: 2
         TypeName: SavableEnableableComp
-        AssemblyQualifiedName: Saving.Sample.Data.SavableEnableableComp
+        AssemblyQualifiedName: Saving.Sample.Data.SavableEnableableComp, Saving.Sample,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         StableTypeHash: 16444262676765792619
         LayoutSize: 1
         Fields: []
@@ -100865,9 +100866,10 @@ MonoBehaviour:
     - rid: 7318635623542686317
       type: {class: SavedTypeAuthoring, ns: NZCore.Saving.Authoring, asm: NZCore.Saving.Authoring}
       data:
-        Version: 1
+        Version: 2
         TypeName: LocalTransform
-        AssemblyQualifiedName: Unity.Transforms.LocalTransform
+        AssemblyQualifiedName: Unity.Transforms.LocalTransform, Unity.Transforms,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         StableTypeHash: 7264489596598919448
         LayoutSize: 32
         Fields:

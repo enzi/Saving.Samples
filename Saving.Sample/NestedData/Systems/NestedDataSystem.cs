@@ -181,16 +181,11 @@ namespace Saving.Sample
         
         public void OnUpdate(ref SystemState state)
         {
-            if (ui.Model.Changed)
-            {
-                SystemAPI.SetComponent(globalObjectEntity, ui.Model.ComponentData);
-                ui.Model.Changed = false;
-            }
-
             if (!saveStateLoadedQuery.IsEmpty)
             {
                 var compData = SystemAPI.GetComponent<SavableComponent>(globalObjectEntity);
                 ui.Model.ComponentData = compData;
+                ui.Model.ForceListRefresh();
             }
         }
     }

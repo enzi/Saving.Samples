@@ -34,12 +34,9 @@ namespace Saving.Sample
     public partial struct GlobalRegisteredObjectCreatorSystem : ISystem
     {
         private Entity globalObjectEntity;
-        private double lastTime;
         
         public void OnCreate(ref SystemState state)
         {
-            lastTime = -1.0;
-            
             var updateMethod = BurstCompiler.CompileFunctionPointer<OnUpdateSaveState>(SaveRegisteredObject);
             var register = SystemAPI.GetSingleton<RegisterSaveObjectsRequestsSingleton>();
             
